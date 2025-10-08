@@ -15,7 +15,7 @@ body {
     padding: 0 1.5em;
 }
 
-.header-top{
+.header-top {
     background-color: navy;
     align-items: center;
 }
@@ -108,7 +108,7 @@ footer h3 {
     text-align: center;
     font-size: 1rem;
     border-radius: 8px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .grid-item h2 {
