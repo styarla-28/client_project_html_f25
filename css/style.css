@@ -14,9 +14,9 @@ body {
     padding: 0 1.5em;
 }
 
-.header-top {
-    width: 75%;
-    height: 75%;
+.header-top img {
+    width: 100%;
+    height: 100%;
     align-items: center;
 }
 
@@ -35,7 +35,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     padding-top: 10px;
-    background-color: #ffcb05;
+    background-color: #FFCB05;
     padding-bottom: 7px;
 }
 
@@ -52,7 +52,7 @@ footer {
     /*styling from UMSI website*/
     text-align: center;
     background-color: #f2f2f2;
-    border-bottom: 13px solid #ffcb05;
+    border-bottom: 13px solid #FFCB05;
     font-size: 16px;
     line-height: 24px;
     padding: 3em 0;
@@ -60,7 +60,12 @@ footer {
 
 footer h3 {
     font-size: 14px;
+}
 
+footer a {
+    text-decoration: none;
+    color: #2F65A7;
+    font-weight: bold;
 }
 
 /*.container-grid{
@@ -98,20 +103,26 @@ footer h3 {
 }
 
 .nav-grid li {
-    background: aliceblue;
+    background: #2F65A7;
     padding: 10px 12px;
     margin: 10px 0;
     font-size: 1rem;
 }
 
 .nav-grid a {
-    color: black;
+    color: white;
     text-decoration: none;
+}
+
+.nav-grid a:hover {
+    color: #FFCB05;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .grid-item {
     grid-column: 1/span 3;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 1rem;
     border-radius: 8px;
@@ -122,7 +133,7 @@ footer h3 {
     font-size: 24px;
     font-style: bold;
     line-height: 32px;
-    text-decoration: underline darkblue 3px;
+    text-decoration: underline #00274C 3px;
     text-underline-offset: 5px;
 }
 
@@ -134,29 +145,41 @@ footer h3 {
     margin-inline-end: 0px;
 }
 
+.grid-item a {
+    font-weight: bold;
+}
+
 .image-grid-item {
-    grid-column: 1/span 3;
+    width: 300px;
+    height: 200px;
     padding: 10px;
-    text-align: center;
+    vertical-align: middle;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .list-style {
     padding: 10px 12px;
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 1rem;
     list-style: none;
-    background-color: antiquewhite;
+    background-color: #00274C;
+    color: #eee;
+}
+
+.list-style a,
+strong {
+    color: #FFCB05;
+    font-weight: bold;
 }
 
 
 .inner-grid-item {
     background-color: #fff;
-    margin: 10px 0;
+    margin: 5px 0px;
     grid-column: 1/span 3;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
     font-size: 1rem;
     border-radius: 8px;
     overflow: hidden;
@@ -166,7 +189,7 @@ footer h3 {
     font-size: 20px;
     font-style: bold;
     line-height: 32px;
-    text-decoration: underline darkblue 2px;
+    text-decoration: underline #FFCB05 3px;
     text-underline-offset: 5px;
 }
 
@@ -181,8 +204,8 @@ footer h3 {
     flex-wrap: nowrap;
 }
 
-.button-flex button {
-    background-color: darkblue;
+button {
+    background-color: #00274C;
     border: none;
     color: white;
     text-align: center;
@@ -201,8 +224,9 @@ details {
 }
 
 summary {
-    padding: 10px 15px;
-    background-color: #ffffff;
+    padding: 15px;
+    background-color: #2F65A7;
+    color: #fff;
     cursor: pointer;
     font-weight: bold;
     list-style: none;

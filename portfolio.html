@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="html5reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <div style="display: flex; align-items: center; gap: 20px;">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="50" height="50">
-      <a href="">Skip to Main Content</a>
+  <header class="header-css">
+    <div class="header-top">
+      <img src="images/UMSI_signature-marketing-no-U-blue.png" alt="UMSI Logo">
+      <div class="skip"><a href="#overview">Skip to Main Content</a></div>
     </div>
     <nav>
-      <ul style="display: flex; gap: 15px; list-style-type: none; padding: 0;">
+      <ul class="nav-grid">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resumes</a></li>
         <li><a href="network.html">Networking & Connections</a></li>
@@ -26,47 +26,54 @@
     <h1>The Perfect Portfolio Awaits!</h1>
   </header>
   <main>
-    <section style="background-color: aliceblue;">
+    <div class="container-grid">
       <!-- this content was generated uwith the help of github copilot-->
-      <h2>Your Portfolio, Your Story</h2>
-      <p>
-        A well-crafted portfolio is more than just a collection of your work—it's a powerful tool to showcase your
-        skills, experiences, and unique value to potential employers. Whether you're a designer, developer, or
-        information professional, a thoughtfully organized portfolio can set you apart in a competitive job market.
-      </p>
-      <p>
-        At UMSI, we understand the importance of a strong portfolio. That's why we've curated resources and tips to
-        help you create a portfolio that truly reflects your abilities and aspirations. From selecting the right
-        projects to presenting them effectively, we're here to guide you every step of the way.
-      </p>
-    </section>
-    <section>
-      <h2>What is a Portfolio?</h2>
-      <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of content for a portfolio page on a career resource website
-        UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
-      <p>A portfolio is a curated collection of your work, achievements, and credentials. It highlights your
-        capabilities, illustrates your journey, and tells your professional story. Portfolios are especially valuable in
-        fields like design, writing, engineering, research, technology, education, and entrepreneurship—but anyone can
-        benefit from showcasing their best work!</p>
-    </section>
-    <section>
-      <h2>Components for a Successful Portfolio</h2>
-      <p>A well-crafted portfolio provides a comprehensive and compelling overview of your skills, experience, and
-        potential. Whether you’re applying for a job, internship, or academic opportunity, ensuring your portfolio
-        contains the right elements can make you stand out to reviewers.</p>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div style="background-color: lightyellow;">
+      <div class="grid-item">
+        <h2>Your Portfolio, Your Story</h2>
+        <p>
+          A well-crafted portfolio is more than just a collection of your work—it's a powerful tool to showcase your
+          skills, experiences, and unique value to potential employers. Whether you're a designer, developer, or
+          information professional, a thoughtfully organized portfolio can set you apart in a competitive job market.
+        </p>
+        <p>
+          At UMSI, we understand the importance of a strong portfolio. That's why we've curated resources and tips to
+          help you create a portfolio that truly reflects your abilities and aspirations. From selecting the right
+          projects to presenting them effectively, we're here to guide you every step of the way.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="grid-item">
+        <h2>What is a Portfolio?</h2>
+        <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of content for a portfolio page on a career resource website
+          UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
+        <p>A portfolio is a curated collection of your work, achievements, and credentials. It highlights your
+          capabilities, illustrates your journey, and tells your professional story. Portfolios are especially valuable
+          in
+          fields like design, writing, engineering, research, technology, education, and entrepreneurship—but anyone can
+          benefit from showcasing their best work!</p>
+      </div>
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Components for a Successful Portfolio</h2>
+        <p>A well-crafted portfolio provides a comprehensive and compelling overview of your skills, experience, and
+          potential. Whether you’re applying for a job, internship, or academic opportunity, ensuring your portfolio
+          contains the right elements can make you stand out to reviewers.</p>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>Introduction</h3>
           <p>This section should highlight your background, professional interests, core skills, and career goals. It
             sets the stage for your story and provides context for your work.</p>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Resume or CV</h3>
           <p>Include your most up-to-date resume or curriculum vitae, outlining your education, work experience, skills,
             and any other relevant qualifications. This gives employers a summary of your professional journey.
           </p>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Work Samples and Projects</h3>
           <p>Showcase your best and most relevant work. Depending on your field, this could include design mockups, code
             snippets, research papers, case studies, presentations, or any other tangible examples of your skills and
@@ -74,30 +81,30 @@
             and the outcomes achieved.
           </p>
         </div>
-      </div>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Contact Information</h3>
           <p>Make it easy for potential employers or collaborators to reach you. Include your email address,
             professional social media profiles (like LinkedIn), and, if relevant, your website.</p>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Achievements and Certifications</h3>
           <p>Feature any awards, honors, scholarships, certifications, or licenses you’ve earned.
           </p>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Recomendations or Testimonials</h3>
           <p>Include quotes or letters of recommendation from professors, supervisors, colleagues, or clients. Positive
             feedback lends credibility and offers insight into your work ethic and impact.
           </p>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>Industry Specific Portfolio Ideas</h2>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div style="background-color: lightyellow;">
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Industry Specific Portfolio Ideas</h2>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>Art and Design</h3>
           <ul>
             <li>Visual samples such as sketches, illustrations, photography, or design projects</li>
@@ -106,7 +113,7 @@
             <li>Client testimonials or feedback on commissioned work</li>
           </ul>
         </div>
-        <div>
+        <div class="inner-grid-item">
           <h3>Engineering and Tech</h3>
           <ul>
             <li>Descriptions and documentation of engineering projects, prototypes, or code samples</li>
@@ -115,10 +122,7 @@
             <li>Certifications, patents, or technical papers</li>
           </ul>
         </div>
-      </div>
-      <br>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div>
+        <div class="inner-grid-item">
           <h3>Science and Research</h3>
           <ul>
             <li>Research summaries, published papers, or posters</li>
@@ -127,7 +131,16 @@
             <li>Awards, grants, or conference presentations</li>
           </ul>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
+          <h3>Media and Communications</h3>
+          <ul>
+            <li>Published articles, blog posts, press releases, or scripts</li>
+            <li>Multimedia samples such as podcasts, videos, or social media campaigns</li>
+            <li>Writing samples tailored for different formats and audiences</li>
+            <li>Editorial or production calendars showing project management skills</li>
+          </ul>
+        </div>
+        <div class="inner-grid-item">
           <h3>Media and Communications</h3>
           <ul>
             <li>Published articles, blog posts, press releases, or scripts</li>
@@ -137,44 +150,50 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>Get Inspired!</h2>
-      <p>Looking for inspiration? Check out these exemplary portfolios from professionals in various
-        fields:</p>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div style="background-color: lightyellow;">
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Get Inspired!</h2>
+        <p>Looking for inspiration? Check out these exemplary portfolios from professionals in various
+          fields:</p>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>UX Design Portfolios</h3>
           <button onclick="window.location.href='https://designlab.com/blog/10-ux-ui-design-portfolios';">UX Portfolio
             Ideas</button>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Data Analyst Portfolios</h3>
           <button
             onclick="window.location.href='https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/';">Data
             Analyst Portfolio Ideas</button>
         </div>
-        <div style="background-color: lightyellow;">
+        <div class="inner-grid-item">
           <h3>Software Engineer Portfolios</h3>
           <button
             onclick="window.location.href='https://www.wearedevelopers.com/en/magazine/161/web-developer-portfolio-examples';">Software
             Engineer Portfolio Ideas</button>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>UMSI Portfolio Resources</h2>
-      <p>Explore these UMSI-specific resources to help you create a standout portfolio:</p>
-      <ul>
-        <li><a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0"
-            target="_blank">Portfolio Rubric</a></li>
-        <li><a href="https://docs.google.com/document/d/1i7B6OXVY3tD9ULkVViF6yk2N16Ell1w9KhCzM7WEmTk/edit?tab=t.0"
-            target="_blank">Portfolios for All Pathways</a></li>
-        <li><a href="https://www.cofolios.com/" target="_blank">Cofolio Sample Portfolios</a></li>
-      </ul>
-    </section>
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>UMSI Portfolio Resources</h2>
+        <p>Explore these UMSI-specific resources to help you create a standout portfolio:</p>
+      </div>
+      <div class="grid-item">
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0"
+              target="_blank">Portfolio Rubric</a></li>
+          <li><a href="https://docs.google.com/document/d/1i7B6OXVY3tD9ULkVViF6yk2N16Ell1w9KhCzM7WEmTk/edit?tab=t.0"
+              target="_blank">Portfolios for All Pathways</a></li>
+          <li><a href="https://www.cofolios.com/" target="_blank">Cofolio Sample Portfolios</a></li>
+        </ul>
+      </div>
+    </div>
   </main>
-  <footer style="background-color: lightyellow">
+  <footer>
     <div>
       <h3>Most Popular Resources</h3>
       <ul>
