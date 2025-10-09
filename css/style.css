@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5em;
 }
 
@@ -10,13 +10,13 @@ body {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 0;
-    max-width: calc(1280px + 6em);
     margin: 0;
     padding: 0 1.5em;
 }
 
 .header-top {
-    background-color: navy;
+    width: 75%;
+    height: 75%;
     align-items: center;
 }
 
@@ -35,6 +35,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     padding-top: 10px;
+    background-color: #ffcb05;
     padding-bottom: 7px;
 }
 
@@ -90,6 +91,12 @@ footer h3 {
     margin: 0;
 }
 
+.nav-grid ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .nav-grid li {
     background: aliceblue;
     padding: 10px 12px;
@@ -104,7 +111,7 @@ footer h3 {
 
 .grid-item {
     grid-column: 1/span 3;
-    padding: 20px;
+    padding-bottom: 15px;
     text-align: center;
     font-size: 1rem;
     border-radius: 8px;
@@ -112,7 +119,7 @@ footer h3 {
 }
 
 .grid-item h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-style: bold;
     line-height: 32px;
     text-decoration: underline darkblue 3px;
@@ -127,6 +134,14 @@ footer h3 {
     margin-inline-end: 0px;
 }
 
+.image-grid-item {
+    grid-column: 1/span 3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .list-style {
     padding: 10px 12px;
     margin: 10px 0;
@@ -135,11 +150,75 @@ footer h3 {
     background-color: antiquewhite;
 }
 
+
 .inner-grid-item {
-    background-color: yellow;
+    background-color: #fff;
+    margin: 10px 0;
     grid-column: 1/span 3;
     padding: 20px;
     text-align: center;
     font-size: 1rem;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.inner-grid-item h3 {
+    font-size: 20px;
+    font-style: bold;
+    line-height: 32px;
+    text-decoration: underline darkblue 2px;
+    text-underline-offset: 5px;
+}
+
+.button-flex {
+    display: flex;
+    flex-direction: column;
+    /* make children go in one row */
+    justify-content: center;
+    /* center the buttons */
+    gap: 15px;
+    /* spacing between buttons */
+    flex-wrap: nowrap;
+}
+
+.button-flex button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 2px;
+    padding: 15px 24px;
+    cursor: pointer;
+}
+
+details {
+    margin-bottom: 10px;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+}
+
+summary {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    /* Removes default arrow in some browsers */
+}
+
+summary::marker {
+    /* For browsers that still show the default marker */
+    display: none;
+}
+
+details[open] summary {
+    background-color: #e0e0e0;
+}
+
+details p {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
 }

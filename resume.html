@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resumes</title>
-  <link rel="stylesheet" href="html5reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <div style="display: flex; align-items: center; gap: 20px;">
+  <header class="header-css">
+    <div class="header-top">
       <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="50" height="50">
-      <a href="">Skip to Main Content</a>
+      <div class="skip"><a href="#overview">Skip to Main Content</a></div>
     </div>
     <nav>
-      <ul style="display: flex; gap: 15px; list-style-type: none; padding: 0;">
+      <ul class="nav-grid">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resumes</a></li>
         <li><a href="network.html">Networking & Connections</a></li>
@@ -28,256 +28,315 @@
   <main>
     <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of content for a resume page on a career resource website
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
-    <section style="background-color: aliceblue;">
-      <h2>Craft a Resume that Tells Your Story</h2>
-      <p>
-        Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and
-        experiences to potential employers. Whether you’re starting from scratch or looking to polish an existing
-        resume, these resources are here to help you every step of the way.
-      </p>
-      <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center; align-items: center;">
-        <div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Craft a Resume that Tells Your Story</h2>
+        <p>
+          Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and
+          experiences to potential employers. Whether you’re starting from scratch or looking to polish an existing
+          resume, these resources are here to help you every step of the way.
+        </p>
+      </div>
+      <div class="grid-item">
+        <div class="image-grid-item">
           <img src="images/UMSI_MastersOrientation_081825_06.jpg"
             alt="a group of masters students doing a group activity"
             style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
         </div>
-        <div>
+        <div class="image-grid-item">
           <img src="images/UMSI_Orientation_082024_010.JPG" alt="a group of students sitting in a room"
             style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
         </div>
-        <div>
+        <div class="image-grid-item">
           <img src="images/UMSI_StellantisAutoUX_091324_01.jpg" alt="A woman and man giving a presentation"
             style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
         </div>
       </div>
-      <p>
-        UMSI students are in high demand, and a clear, well-organized resume will help you stand out among applicants.
-        On this page, you'll find practical tips, templates, and guides—all tailored to the needs of School of
-        Information students and aligned with employer expectations.
-      </p>
-      <p>
-        Need feedback? You can always <a
-          href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a
-          CDO Career Coach</a> to review your materials.
-      </p>
-    </section>
-
-    <section>
+      <div class="grid-item">
+        <p>
+          UMSI students are in high demand, and a clear, well-organized resume will help you stand out among applicants.
+          On this page, you'll find practical tips, templates, and guides—all tailored to the needs of School of
+          Information students and aligned with employer expectations.
+        </p>
+      </div>
+      <div class="grid-item">
+        <p>
+          Need feedback? You can always <a
+            href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a
+            CDO Career Coach</a> to review your materials.
+        </p>
+      </div>
+    </div>
+    <div class="container-grid">
       <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of content for a resume page on a career resource website
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
-      <h2>Resume Writing Made Easy: Steps to Success</h2>
-      <ol>
-        <li><strong>Download a UMSI-Approved Template:</strong> Start with a format that works—no need to design from
-          scratch.</li>
-        <li><strong>Gather Your Experiences:</strong> List jobs, internships, volunteer roles, coursework, and projects
-          most relevant to your goals.</li>
-        <li><strong>Write Impactful Bullets:</strong> Use action verbs and highlight your skills, results, and unique
-          contributions.</li>
-        <li><strong>Tailor for Each Opportunity:</strong> Customize your resume for every job or internship you pursue.
-        </li>
-        <li><strong>Review and Edit:</strong> Proofread for errors, check formatting, and ask for feedback from peers or
-          a career coach.</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Resume Resources</h2>
-      <ul>
-        <li>
-          <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?usp=sharing"
-            target="_blank">
-            UMSI Resume Guide and Rubric
-          </a> <br>
-          Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?usp=sharing"
-            target="_blank">
-            Writing Effective Resume Bullets
-          </a> <br>
-          Learn how to describe your work and impact in ways employers notice.
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?usp=sharing"
-            target="_blank">
-            Resume Rubric
-          </a> <br>
-          Evaluate your resume using the same criteria as UMSI’s Career Development Office.
-        </li>
-        <li>
-          <a href="https://umich.instructure.com/courses/137916/modules#module_356161" target="_blank">
-            Application Materials: Workshops and More
-          </a> <br>
-          Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
-        </li>
-      </ul>
+      <div class="grid-item">
+        <h2>Resume Writing Made Easy: Steps to Success</h2>
+      </div>
+      <div class="grid-item">
+        <ol>
+          <li class="list-style"><strong>Download a UMSI-Approved Template:</strong> Start with a format that works—no
+            need to design from
+            scratch.</li>
+          <li class="list-style"><strong>Gather Your Experiences:</strong> List jobs, internships, volunteer roles,
+            coursework, and
+            projects
+            most relevant to your goals.</li>
+          <li class="list-style"><strong>Write Impactful Bullets:</strong> Use action verbs and highlight your skills,
+            results, and unique
+            contributions.</li>
+          <li class="list-style"><strong>Tailor for Each Opportunity:</strong> Customize your resume for every job or
+            internship you
+            pursue.
+          </li>
+          <li class="list-style"><strong>Review and Edit:</strong> Proofread for errors, check formatting, and ask for
+            feedback from peers
+            or
+            a career coach.</li>
+        </ol>
+      </div>
+    </div>
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Resume Resources</h2>
+      </div>
+      <div class="grid-item">
+        <ul>
+          <li class="list-style">
+            <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?usp=sharing"
+              target="_blank">
+              UMSI Resume Guide and Rubric
+            </a> <br>
+            Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
+          </li>
+          <li class="list-style">
+            <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?usp=sharing"
+              target="_blank">
+              Writing Effective Resume Bullets
+            </a> <br>
+            Learn how to describe your work and impact in ways employers notice.
+          </li>
+          <li class="list-style">
+            <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?usp=sharing"
+              target="_blank">
+              Resume Rubric
+            </a> <br>
+            Evaluate your resume using the same criteria as UMSI’s Career Development Office.
+          </li>
+          <li class="list-style">
+            <a href="https://umich.instructure.com/courses/137916/modules#module_356161" target="_blank">
+              Application Materials: Workshops and More
+            </a> <br>
+            Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-item">
       <p>
         Ready for review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
           target="_blank">Book a resume review appointment with a CDO Career Coach</a>.
       </p>
-    </section>
-    <section>
-      <h2>Resume Templates</h2>
-      <p>
-        Here are some templates recommended by UMSI CDO Office
-      </p>
-      <div style="display: flex; flex-direction: row; gap: 15px;">
-        <div style="background-color: lightgrey;">
+    </div>
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Resume Templates</h2>
+        <p>
+          Here are some templates recommended by UMSI CDO Office
+        </p>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>Single Column Resume Template</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1GW_t58Datkp17tFeJBii4AUeLXN017vjJsWaP2pWmuQ/edit?usp=drive_link';">Single
-            Column Template-1 </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/152i4dhXQG_SwsjCXf4KLrneY0GdYSgoe/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Single
-            Column Template-2</button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1CmbfhDDsW2uXlGt5RA4u_VQIhsPyJpJrflwqUKE09B4/edit?usp=drive_link';">Single
-            Column Template-3</button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1GW_t58Datkp17tFeJBii4AUeLXN017vjJsWaP2pWmuQ/edit?usp=drive_link';">Single
+              Column Template-1 </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/152i4dhXQG_SwsjCXf4KLrneY0GdYSgoe/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Single
+              Column Template-2</button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1CmbfhDDsW2uXlGt5RA4u_VQIhsPyJpJrflwqUKE09B4/edit?usp=drive_link';">Single
+              Column Template-3</button>
+          </div>
         </div>
-        <div>
+        <br>
+        <div class="inner-grid-item">
           <h3>Double Column Resume Templates</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1vgMsTTfVcfvVOfmmgmbDH2J11NLAmj1g/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Double
-            Column Template-1 </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1vDsi_hJaoL0-3FgrF2acEGy6t1XvuRno/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Double
-            Column Template-2</button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1vgMsTTfVcfvVOfmmgmbDH2J11NLAmj1g/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Double
+              Column Template-1 </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1vDsi_hJaoL0-3FgrF2acEGy6t1XvuRno/edit?usp=drive_link&ouid=103261002700794574977&rtpof=true&sd=true';">Double
+              Column Template-2</button>
+          </div>
         </div>
       </div>
-    </section>
-    <section style="background-color: aliceblue;">
-      <h2>UMSI Specific Resume Examples</h2>
-      <p>
-        Here are some examples of resumes from UMSI students in different specializations. Use these as inspiration,
-        but remember to make your resume uniquely yours!
-      </p>
-      <div style="display: flex; flex-direction: row; gap: 15px;">
-        <div style="background-color: lightgrey;">
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>UMSI Specific Resume Examples</h2>
+        <p>
+          Here are some examples of resumes from UMSI students in different specializations. Use these as inspiration,
+          but remember to make your resume uniquely yours!
+        </p>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>BSI Students</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.otqn06vap8ip';">BSI-
-            UX Specialisation
-          </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.z6dn6sgi00d1';">BSI-
-            Analytics Specialisation
-          </button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.otqn06vap8ip';">BSI-
+              UX Specialisation
+            </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.z6dn6sgi00d1';">BSI-
+              Analytics Specialisation
+            </button>
+          </div>
         </div>
-        <div style="background-color: lightgrey;">
+        <div class="inner-grid-item">
           <h3>MHI Students</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.c0kfknl6r2mf';">MHI-
-            Data Science Specialisation
-          </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.gxl96m8qvkh0';">MHI
-            Master Resume
-          </button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.c0kfknl6r2mf';">MHI-
+              Data Science Specialisation
+            </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.gxl96m8qvkh0';">MHI
+              Master Resume
+            </button>
+          </div>
         </div>
-        <div style="background-color: lightgrey;">
+        <div class="inner-grid-item">
           <h3>MSI Students</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.qkd434pt4tj9';">MSI-
-            Data Science Specialisation
-          </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.fga82oa0fwo4';">MSI-
-            LAKES Specialisation
-          </button>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.f7i9mo7gs1pr';">MSI-
-            UX Specialisation
-          </button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.qkd434pt4tj9';">MSI-
+              Data Science Specialisation
+            </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.fga82oa0fwo4';">MSI-
+              LAKES Specialisation
+            </button>
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.f7i9mo7gs1pr';">MSI-
+              UX Specialisation
+            </button>
+          </div>
         </div>
-      </div>
-      <div style="display: flex; flex-direction: row; gap: 15px;">
-        <div style="background-color: lightgrey;">
+        <div class="inner-grid-item">
           <h3>MADS Students</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.n8ynthgz2x4d';">MADS
-            Master Resume
-          </button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.n8ynthgz2x4d';">MADS
+              Master Resume
+            </button>
+          </div>
         </div>
-        <div style="background-color: lightgrey;">
+        <div class="inner-grid-item">
           <h3>PhD Students</h3>
-          <button
-            onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.x5lkqhs57qap';">PhD
-            Master Resume
-          </button>
+          <div class="button-flex">
+            <button
+              onclick="window.location.href='https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0#bookmark=kix.x5lkqhs57qap';">PhD
+              Master Resume
+            </button>
+          </div>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>Cover Letters</h2>
-      <p>
-        A well-crafted cover letter can complement your resume and provide additional context about your skills and
-        experiences.
-      </p>
-    </section>
-    <section style="background-color: aliceblue;">
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Cover Letters</h2>
+        <p>
+          A well-crafted cover letter can complement your resume and provide additional context about your skills and
+          experiences.
+        </p>
+      </div>
+    </div>
+    <div class="container-item">
       <!-- Content taken & modified from UMGPT with the prompt, "Write me  content for a cover letter structure on a career resource website
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
-      <h2>Key Components of a Cover Letter</h2>
-      <div>
-        <div style="background-color: lightgrey;">
+      <div class="grid-item">
+        <h2>Key Components of a Cover Letter</h2>
+      </div>
+      <div class="grid-item">
+        <div class="inner-grid-item">
           <h3>Header</h3>
           <p>Include your contact information, the date, and the employer's contact details.</p>
         </div>
-        <div>
+        <div class="inner-grid-item">
           <h3>Introduction</h3>
           <p>State the position you’re applying for and a brief overview of why you’re a great fit.</p>
         </div>
-        <div style="background-color: lightgrey;">
+        <div class="inner-grid-item">
           <h3>Body</h3>
           <p>Highlight your relevant experiences, skills, and accomplishments that align with the job description.</p>
         </div>
-        <div>
+        <div class="inner-grid-item">
           <h3>Closing</h3>
           <p>Express enthusiasm for the role, thank the reader for their time, and include a call to action.</p>
         </div>
       </div>
-      <h3>Cover Letter Resources</h3>
-      <ul>
-        <li>
-          <a href="https://docs.google.com/document/d/15kYeycV4isGpNFI6DWnjqTkp5JnMyitKJ1Wc8kIH-eA/edit?tab=t.0"
-            target="_blank">
-            UMSI Cover Letter Guide
-          </a> <br>
-          Tips and examples for writing a compelling cover letter. </li>
-          <li>
-          <a href="https://docs.google.com/document/d/1WJrgSiwXGxGLN_mXBrRUdQy3Lijo68DFwYriGGALGjc/edit?tab=t.0"
-            target="_blank">
-            UMSI Cover Letter Rubric
-          </a> <br>
-          Checklist for writing a Successful cover letter. </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Resume FAQ</h2>
-      <ul>
-        <li>
-          <strong>How long should my resume be?</strong><br>
-          For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-        </li>
-        <li>
-          <strong>Do I need a different resume for each application?</strong><br>
-          It’s wise to tailor your resume to the requirements and keywords of each opportunity.
-        </li>
-        <li>
-          <strong>Is it okay to include coursework or student projects?</strong><br>
-          Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and
-          impact.
-        </li>
-        <li>
-          <strong>How often should I update my resume?</strong><br>
-          Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-        </li>
-      </ul>
-    </section>
+      <div class="grid-item">
+        <h3>Cover Letter Resources</h3>
+        <ul>
+          <li class="list-style">
+            <a href="https://docs.google.com/document/d/15kYeycV4isGpNFI6DWnjqTkp5JnMyitKJ1Wc8kIH-eA/edit?tab=t.0"
+              target="_blank">
+              UMSI Cover Letter Guide
+            </a> <br>
+            Tips and examples for writing a compelling cover letter.
+          </li>
+          <li class="list-style">
+            <a href="https://docs.google.com/document/d/1WJrgSiwXGxGLN_mXBrRUdQy3Lijo68DFwYriGGALGjc/edit?tab=t.0"
+              target="_blank">
+              UMSI Cover Letter Rubric
+            </a> <br>
+            Checklist for writing a Successful cover letter.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-grid">
+      <div class="grid-item">
+        <h2>Resume FAQ</h2>
+      </div>
+      <!--This FAQ section was created with the help of this websie: https://medium.com/@francesco.saviano87/building-a-simple-faq-accordion-with-html-css-and-javascript-2a8aed32badf-->
+      <div class="grid-item">
+        <details>
+          <summary>How long should my resume be?</summary>
+          <p>
+            For most UMSI students and new grads, one page is best. More experienced professionals may require two
+            pages.
+          </p>
+        </details>
+        <details>
+          <summary>Do I need a different resume for each application?</summary>
+          <p>It’s wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+        </details>
+        <details>
+          <summary>Is it okay to include coursework or student projects?</summary>
+          <p>
+            Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills
+            and impact.
+          </p>
+        </details>
+        <details>
+          <summary>How often should I update my resume?</summary>
+          <p>Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
+          </p>
+        </details>
+      </div>
+    </div>
+    </div>
     <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
   </main>
-  <footer style="background-color: lightyellow">
+  <footer>
     <div>
       <h3>Most Popular Resources</h3>
       <ul>
