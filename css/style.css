@@ -151,7 +151,8 @@ footer a {
 }
 
 .grid-item p {
-    padding-top: 10px;
+    text-align: left;
+    padding: 10px;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
