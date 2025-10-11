@@ -125,6 +125,7 @@ footer a {
 }
 
 .grid-item {
+    display: grid;
     grid-column: 1/span 3;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -181,6 +182,7 @@ strong {
 
 
 .inner-grid-item {
+    display: grid;
     background-color: #fff;
     margin: 10px 0px;
     grid-column: 1/span 3;
