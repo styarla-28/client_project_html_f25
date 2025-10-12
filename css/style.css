@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
 }
 
@@ -30,23 +30,39 @@ body {
     top: 25px;
 }
 
+.image-overflow {
+    align-items: center;
+    display: grid;
+    grid-column: 2 / 5;
+}
+
 .header-css h1 {
     text-align: center;
     font-size: 30px;
     line-height: normal;
     font-weight: bold;
     padding: 10px;
-    background-color: #FFCB05;
     padding-bottom: 7px;
+    text-decoration: underline #FFCB05 4px;
+    text-underline-offset: 7px;
 }
 
 .container-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    /* always 3 columns */
-    gap: 10px;
-    padding: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    /* always 5 columns */
+    padding: 10px;
+}
+
+ul,
+ol {
+    display: grid;
+    grid-column: 2/span 3;
+}
+
+.inner-grid-item {
+    display: grid;
+    grid-column: 1/-1
 }
 
 footer {
@@ -100,6 +116,7 @@ footer a {
     background-color: #2F65A7;
     border: #e0e0e0;
     padding: 10px 12px;
+    border-radius: 8px;
     margin: 10px 0;
     font-size: 1rem;
 }
@@ -129,7 +146,10 @@ footer a {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-column: 1/span 3;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1/-1;
     padding-top: 5px;
     padding-bottom: 10px;
     text-align: center;
@@ -139,6 +159,7 @@ footer a {
 }
 
 .grid-item h2 {
+    grid-column: 1 / -1;
     padding: 10px;
     font-size: 28px;
     line-height: 32px;
@@ -148,12 +169,9 @@ footer a {
 }
 
 .grid-item p {
-    text-align: left;
+    grid-column: 1/-1;
+    text-align: center;
     padding: 10px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .grid-item a {
@@ -171,6 +189,7 @@ footer a {
 
 .list-style {
     padding: 10px 12px;
+    grid-column: 2/span 3;
     margin: 15px 0;
     font-size: 1rem;
     list-style: none;
@@ -187,22 +206,37 @@ strong {
 
 .inner-grid-item {
     display: grid;
-    background-color: #fff;
+    background-color: #FFCB05;
+    color: #000;
+    width: 300px;
+    height: fit-content;
     margin: 10px 0px;
-    grid-column: 1/span 3;
-    padding: 10px;
+    grid-column: 2/span 3;
+    padding: 5px 10px;
     text-align: left;
     font-size: 1rem;
     border-radius: 8px;
+    border: 1px solid #8e8e8e;
     overflow: hidden;
+    justify-items: center;
+    align-items: center;
+}
+
+.inner-grid-item ul{
+    display: grid;
+    grid-column: 1/-1;
 }
 
 .inner-grid-item h3 {
+    text-align: center;
     font-size: 20px;
-    font-style: bold;
     line-height: 32px;
     text-decoration: underline #FFCB05 3px;
     text-underline-offset: 5px;
+}
+
+.inner-grid-item p {
+    text-align: left;
 }
 
 .inner-grid-item li {
@@ -260,6 +294,7 @@ summary {
     cursor: pointer;
     font-weight: bold;
     list-style: none;
+    width: fit-content;
     /* Removes default arrow in some browsers */
 }
 
@@ -276,4 +311,9 @@ details[open] summary {
 details p {
     padding: 10px 15px;
     border-top: 1px solid #eee;
+}
+
+.no-background {
+    background-color: transparent;
+    border: 0;
 }
