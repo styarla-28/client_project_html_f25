@@ -6,8 +6,10 @@ body {
 
 .header-css {
     /*styling from UMSI website*/
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 0;
     margin: 0;
@@ -36,7 +38,7 @@ body {
     grid-column: 2 / 5;
 }
 
-.header-css h1 {
+h1 {
     text-align: center;
     font-size: 30px;
     line-height: normal;
@@ -96,13 +98,14 @@ footer a {
 }*/
 
 .nav-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav-grid ul {
     list-style: none;
-    padding: 0;
+    padding: 0 25px;
     margin: 0;
 }
 
@@ -113,7 +116,6 @@ footer a {
 }
 
 .nav-grid li {
-    background-color: #2F65A7;
     border: #e0e0e0;
     padding: 10px 12px;
     border-radius: 8px;
@@ -121,16 +123,22 @@ footer a {
     font-size: 1rem;
 }
 
-.nav-grid li.active {
+/* .nav-grid li.active {
     background-color: #00274C;
-}
+} */
 
 .nav-grid a {
     color: white;
+    font-size: small;
+    background-color: #2F65A7;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin: 10px 0;
     text-decoration: none;
 }
 
 .nav-grid a.active {
+    background-color: #00274C;
     color: #FFCB05;
     font-weight: bold;
     text-decoration: none;
@@ -143,7 +151,9 @@ footer a {
 }
 
 .grid-item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -179,10 +189,9 @@ footer a {
 }
 
 .image-grid-item {
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height: 90%;
     padding: 10px;
-    vertical-align: middle;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -205,24 +214,20 @@ strong {
 
 
 .inner-grid-item {
-    display: grid;
     background-color: #FFCB05;
     color: #000;
-    width: 300px;
-    height: fit-content;
+    width: 40%;
     margin: 10px 0px;
-    grid-column: 2/span 3;
     padding: 5px 10px;
     text-align: left;
     font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #8e8e8e;
     overflow: hidden;
-    justify-items: center;
     align-items: center;
 }
 
-.inner-grid-item ul{
+.inner-grid-item ul {
     display: grid;
     grid-column: 1/-1;
 }
@@ -241,7 +246,7 @@ strong {
 
 .inner-grid-item li {
     padding: 10px 12px;
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 1rem;
     list-style: none;
 }
@@ -294,7 +299,6 @@ summary {
     cursor: pointer;
     font-weight: bold;
     list-style: none;
-    width: fit-content;
     /* Removes default arrow in some browsers */
 }
 
@@ -316,4 +320,86 @@ details p {
 .no-background {
     background-color: transparent;
     border: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    .header-css {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-css img {
+        width: 60%;
+        height: 60%;
+        align-items: center;
+    }
+
+    .nav-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px 10px;
+    }
+
+    .nav-grid a {
+        color: #000;
+        background-color: transparent;
+        font-weight: bold;
+    }
+
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .inner-grid-item {
+        padding: 20px;
+    }
+
+    .inner-grid-item ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .flexed {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    ul,
+    ol {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    li {
+        text-align: left;
+        list-style: none;
+    }
+
+    footer a {
+        text-align: center;
+    }
+
+    .image-overflow {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
