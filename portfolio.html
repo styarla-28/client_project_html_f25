@@ -62,7 +62,7 @@
           potential. Whether you’re applying for a job, internship, or academic opportunity, ensuring your portfolio
           contains the right elements can make you stand out to reviewers.</p>
       </div>
-      <div class="grid-item">
+      <div class="grid-item flexed">
         <div class="inner-grid-item">
           <h3>Introduction</h3>
           <p>This section should highlight your background, professional interests, core skills, and career goals. It
@@ -104,7 +104,7 @@
       <div class="grid-item">
         <h2>Industry Specific Portfolio Ideas</h2>
       </div>
-      <div class="grid-item">
+      <div class="grid-item flexed">
         <div class="inner-grid-item">
           <h3>Art and Design</h3>
           <ul>
@@ -150,7 +150,7 @@
         <p>Looking for inspiration? Check out these exemplary portfolios from professionals in various
           fields:</p>
       </div>
-      <div class="grid-item">
+      <div class="grid-item flexed">
         <div class="inner-grid-item">
           <h3>UX Design Portfolios</h3>
           <button onclick="window.location.href='https://designlab.com/blog/10-ux-ui-design-portfolios';">UX Portfolio
@@ -206,9 +206,14 @@
         </li>
       </ul>
     </div>
-    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career
+    <p> © Copyrights <span id="year"></span> University of Michigan School of Information | <a
+        href="https://umich.instructure.com/courses/137916">UMSI Career
         Development Office </a></p>
   </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

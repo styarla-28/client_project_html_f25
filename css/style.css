@@ -216,7 +216,7 @@ strong {
 .inner-grid-item {
     background-color: #FFCB05;
     color: #000;
-    width: 40%;
+    width: 70%;
     margin: 10px 0px;
     padding: 5px 10px;
     text-align: left;
@@ -363,6 +363,7 @@ details p {
     }
 
     .inner-grid-item {
+        width: 40%;
         padding: 20px;
     }
 
@@ -394,7 +395,11 @@ details p {
         list-style: none;
     }
 
-    footer a {
+    footer ul {
+        justify-content: center;
+    }
+
+    footer li {
         text-align: center;
     }
 
