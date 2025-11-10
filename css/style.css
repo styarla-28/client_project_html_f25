@@ -100,7 +100,7 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .nav-grid ul {
@@ -156,8 +156,6 @@ footer a {
     justify-items: center;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    justify-items: center;
     grid-template-columns: repeat(5, 1fr);
     grid-column: 1/-1;
     padding-top: 5px;
@@ -424,6 +422,10 @@ aside ul {
         align-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .grid-item p {
+        text-align: left;
     }
 
     .inner-grid-item {
