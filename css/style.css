@@ -49,7 +49,7 @@ h1 {
     padding: 10px;
     padding-bottom: 7px;
     text-decoration: underline #FFCB05 4px;
-    text-underline-offset: 7px;
+    text-underline-offset: 4px;
 }
 
 .container-grid {
@@ -105,7 +105,7 @@ footer a {
 
 .nav-grid ul {
     list-style: none;
-    padding: 0 25px;
+    padding: 0 15px;
     margin: 0;
 }
 
